@@ -1,0 +1,23 @@
+
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block title %}Editar Carteiras{% endblock %}
+
+{% block content %}
+
+
+<div class="offset-1 col-10 list-div">
+    <h1>Editando {{  wallets.name_wallet }}</h1>
+    <br>
+    <form method="POST">
+        {% csrf_token %}
+        {{form|crispy}}
+        <input type="submit" class="btn btn-success" value="Editar Carteira">
+    </form>
+</div>
+
+<br>
+
+
+{% endblock %}

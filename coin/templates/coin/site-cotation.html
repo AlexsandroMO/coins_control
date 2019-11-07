@@ -1,0 +1,87 @@
+
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block title %}Cotação Oline{% endblock %}
+
+{% block content %}
+
+<meta http-equiv="refresh" content="20; /">
+
+<div class="offset-1 col-10 list-div">
+    <h1>Cotação Atual</h1>
+    <a id="add-link" href="{% url 'url-new-wallet' %}">
+        <div class="col-2 add-div">
+            <i class="fab fa-bitcoin"></i> &nbsp&nbspCriar Carteira
+        </div>
+    </a>
+
+    <table class="minhaTabela">
+            <thead>
+                <tr ><br><br>
+                    <th scope="row" rowspan="1" colspan="1">MOEDA<br><br></th>
+                    <th>VALOR DE COMPRA<br><br></td>
+                    <th>VALOR DE VENDA<br><br></td>
+                    <th>DATA DA TRANSAÇÂO<br><br></td>
+                </tr>
+                
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td id="alinha-td">Bitcoin</td>
+                    <td>{{bitcoin.1}}</td>
+                    <td>{{bitcoin.2}}</td>
+                    <td>{{bitcoin.3}}</td>
+                </tr>
+            </tbody>
+    </table>
+
+    <table class="minhaTabela">
+        <thead>
+            <tr ><br><br>
+                <th scope="row" rowspan="1" colspan="1">MOEDA<br><br></th>
+                <th>VALOR DE COMPRA<br><br></td>
+                <th>VALOR DE VENDA<br><br></td>
+                <th>DATA DA TRANSAÇÂO<br><br></td>
+            </tr>
+            
+        </thead>
+
+        <tbody>
+            <tr>
+                <td id="alinha-td">Dolar</td>
+                <td>{{all_cotation.0}}</td>
+                <td>{{all_cotation.1}}</td>
+                <td>{{bitcoin.3}}</td>
+            </tr>
+            <tr>
+                <td id="alinha-td">Euro</td>
+                <td>{{all_cotation.2}}</td>
+                <td>{{all_cotation.3}}</td>
+                <td>{{bitcoin.3}}</td>
+            </tr>
+            <tr>
+                <td id="alinha-td">Peso</td>
+                <td>{{all_cotation.4}}</td>
+                <td>{{all_cotation.5}}</td>
+                <td>{{bitcoin.3}}</td>
+            </tr>
+            <tr>
+                <td id="alinha-td">Iene</td>
+                <td>{{all_cotation.6}}</td>
+                <td>{{all_cotation.7}}</td>
+                <td>{{bitcoin.3}}</td>
+            </tr>
+        </tbody>
+</table>
+
+    <br>
+    <br>    
+    <br>
+    <br>
+
+</div>
+
+
+{% endblock %}

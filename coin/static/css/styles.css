@@ -1,0 +1,255 @@
+
+
+.container-fluid {
+    padding: 0;
+}
+
+/* .container-fluid .row{
+    margin: 0;
+} */
+
+
+/* Navbar */
+ .navbar {
+    border-bottom: 1px solid #333;
+    margin-bottom: 20px;
+}
+
+.navbar-nav {
+    margin: auto;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.navbar-light .navbar-nav a.nav-link{
+    color: #333;
+    letter-spacing: 1px;
+}
+
+/*botão adicionar*/
+
+#add-link{
+    text-decoration: none;
+    font-size: 16px;
+    width: auto;
+
+}
+
+.add-div{
+    background-color:#008B8B;
+    cursor: pointer;
+    display: inline-block;
+    color: #FFF;
+    padding: 8px;
+    border-radius: 5px;
+    margin-right: 25px;
+}
+
+.add-div2{
+    /* background-color:#DCDCDC; */
+    cursor: pointer;
+    display: inline-block;
+    color: #333;
+    padding: 8px;
+    border-radius: 5px;
+    margin-right: 25px;
+}
+
+.add-div3{
+    background-color: #20B2AA;
+    cursor: pointer;
+    display: inline-block;
+    color: #fff;
+    padding: 8px;
+    border-radius: 5px;
+    margin-right: 25px;
+}
+
+
+.alinha-col1{
+    cursor: pointer;
+    display: inline-block;
+    color: #333;
+    padding: 8px;
+    border-radius: 5px;
+    margin-right: 25px;
+}
+
+.alinha-p{
+    position: relative;
+    left: 49%;
+    color: red;
+}
+
+
+/* .minhaTabela {
+    position: relative;
+    left: 80px;
+} */
+
+.minhaTabela tr td{
+    font-size: 18px;
+    text-align: center;
+    width: 300px;
+    cursor: pointer;
+    border-collapse: collapse;
+    border: 1px solid #778899;
+
+}
+
+/**Cor quando passar por cima**/
+.minhaTabela tr:hover td{
+    background-color: #B0E0E6;
+}
+  
+/**Cor quando selecionado**/
+.minhaTabela tr.selecionado td{
+    background-color: #CD853F;
+}
+
+
+#alinha-td{
+    text-align: left;
+}
+
+#alinha-td2{
+    position: relative;
+    left: 55px;
+}
+
+
+#alinha-td3{
+    position: relative;
+    left: 55px;
+}
+
+
+.fas.fa-plus{
+    color: #FFF;
+    margin-right: 10px;
+    margin-left: 5px;
+}
+
+.fas fa-coins{
+    color: #FFF;
+    margin-right: 10px;
+    margin-left: 5px;
+}
+
+.fab fa-bitcoin{
+    color: #333;
+    margin-right: 10px;
+    margin-left: 5px;
+}
+
+
+.fas fa-wrench{
+    color: #FFF;
+    margin-right: 10px;
+    margin-left: 5px;
+}
+
+
+
+/* Search */
+.fas.fa-search{
+    position: absolute;
+    top: 12px;
+    right: 26px;
+    cursor: pointer;
+}
+
+.search-div{
+    padding: 0px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+/* .form-control{
+    position: absolute;
+    top: -7px;
+    left: 30px;
+    display: inline-block;
+} */
+
+
+/*lista de tarefas*/
+.list-div {
+    padding: 0;
+}
+
+.task-list {
+    padding: 0;
+}
+
+.task-item {
+    list-style: none;
+    font-size: 20px;
+    height: 50px;
+    padding-top: 10px;
+    border-bottom: 1px dashed #ccc;
+}
+
+.fas.fa-trash-alt, .fas.fa-edit {
+    cursor: pointer;
+    margin: 5px;
+    font-size: 20px;
+    float: right;
+}
+
+.fas.fa-trash-alt {
+    color: #db1e47;
+}
+
+.fas.fa-edit {
+    color: #13c43f;
+}
+
+/* Rodapé*/
+footer {
+    background-color: #333;
+    height: 100px;
+    border-top: 2px solid #202020;
+}
+
+footer p {
+    color: #f5f5f5;
+    text-align: center;
+    top: 40%;
+    position: relative;
+}
+
+/* Messages */
+ul.messages{
+    padding: 0;
+}
+
+ul.messages li{
+    list-style: none;
+}
+
+/* Paginação */
+
+.pagination{
+    margin-bottom: 20px;
+}
+
+.step-links{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.step-links .current{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/* Login*/
+.auth-card{
+    margin-bottom: 30px;
+}
+

@@ -1,0 +1,67 @@
+
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block title %}Minhas Carterias{% endblock %}
+
+{% block content %}
+
+<meta http-equiv="refresh" content="20; {{wallet.id}}">
+
+
+<div class="offset-1 col-10 list-div">
+    <h1>Editando {{  wallets.name_wallet }}</h1>
+    <br>
+    <a id="add-link" href="#">
+        <div class="col-4 add-div3">
+            <i class="fas fa-coins"></i> &nbspValor Atual da Carteira: &nbsp{{start_project.3}}
+        </div>
+    </a>
+    <br>
+    <table class="minhaTabela">
+            <thead>
+                <tr ><br><br>
+                    <th scope="row" rowspan="1" colspan="1">VALOR DE COMPRA<br><br></th>
+                    <th>LUCRO / PERDA<br><br></td>
+                    <th>VALOR DA CARTEIRA EM BTC<br><br></td>
+                    <th>VALOR CARTEIRA EM REAIS<br><br></td>
+                </tr>
+                
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td id="alinha-td">{{start_project.0}}</td>
+                    <td>{{start_project.1}}</td>
+                    <td>{{start_project.2}}</td>
+                    <td>{{start_project.3}}</td>
+                </tr>
+            </tbody>
+    </table>
+
+    <table class="minhaTabela">
+            <thead>
+                <tr ><br><br>
+                    <th scope="row" rowspan="1" colspan="1">MOEDA<br><br></th>
+                    <th>VALOR DE COMPRA<br><br></td>
+                    <th>VALOR DE VENDA<br><br></td>
+                    <th>DATA DA TRANSAÇÂO<br><br></td>
+                </tr>
+                
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td id="alinha-td">Bitcoin</td>
+                    <td>{{bitcoin.1}}</td>
+                    <td>{{bitcoin.2}}</td>
+                    <td>{{bitcoin.3}}</td>
+                </tr>
+            </tbody>
+    </table>
+
+</div>
+<br>
+
+
+{% endblock %}

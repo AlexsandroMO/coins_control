@@ -1,0 +1,46 @@
+
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block title %}Cotação Oline{% endblock %}
+
+{% block content %}
+
+
+<div class="offset-1 col-10 list-div">
+    {% for wallet in wallets %}
+        <h1>Carteira {{wallet}}</h1>
+        <a id="add-link" href="pk-wallet/{{wallet.id}}">
+            <div class="col-4 add-div">
+                <i class="fas fa-coins"></i> &nbspValor Inicial da Carteira: &nbsp{{wallet.var_wallet}}
+            </div>
+        </a>
+        {% if messages %}
+        <ul class="messages">
+           {% for message in messages %}
+                <li {% if message.tags %}class="alert alert-{{message.tags}}"{% endif %}>{{ message }}</li>
+           {% endfor %}
+        </ul>
+        {% endif %}
+        <ul class="task-list">
+            <li class="task-item">
+                    <div class="col-10 add-div2">
+                        <a href="{% url 'url-new-wallet' %}"><i class="fab fa-bitcoin"></i></a>&nbsp{{wallet}}
+                    </div>
+                <a href="delete_wallet/{{wallet.id}}" class="delete-btn"><span><i class="fas fa-trash-alt"></i></span></a>
+                <a href="edit-wallet/{{wallet.id}}"><span><i class="fas fa-edit"></i></span></a>
+            
+            </li>
+        </ul>
+    {% endfor %}
+    <br>
+    <br>    
+    <br>
+    <br>
+
+
+
+</div>
+
+
+{% endblock %}
